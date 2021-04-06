@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import GlobalStyle from "Components/GlobalStyle";
 import Router from "Components/Router";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <GlobalStyle />
-      <Router />
+      <Router isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };
