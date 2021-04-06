@@ -7,8 +7,8 @@ import {
 import Nav from "Components/Nav";
 import Home from "Screens/Home/Home";
 import Desserts from "Screens/Desserts";
-import Fullmenu from "Screens/Fullmenu";
-import Ordernow from "Screens/Ordernow";
+import FullMenu from "Screens/FullMenu";
+import OrderNow from "Screens/OrderNow";
 import SliderBar from "Components/SliderBar";
 
 export default ({ isOpen, setIsOpen }) => {
@@ -21,8 +21,8 @@ export default ({ isOpen, setIsOpen }) => {
           <Home isOpen={isOpen} setIsOpen={setIsOpen} />
         </Route>
         <Route path="/desserts" component={Desserts} />
-        <Route path="/fullmenu" component={Fullmenu} />
-        <Route path="/ordernow" component={Ordernow} />
+        <Route path="/fullmenu" component={FullMenu} />
+        <Route path="/ordernow" component={OrderNow} />
         <Redirect from="*" to="/" />
       </Switch>
     </Router>
