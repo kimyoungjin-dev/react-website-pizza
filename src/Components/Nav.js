@@ -43,13 +43,13 @@ const Icon = styled(GiFullPizza)`
   transform: translate(-50%, -15%);
 `;
 
-const Nav = () => {
+const Nav = ({ setIsOpen }) => {
   return (
     <NavContainer>
       <NavLink to="/">Pizza</NavLink>
       <NavIcon>
-        <p>메뉴</p>
-        <Icon />
+        <p>Menu</p>
+        <Icon onClick={() => setIsOpen(true)} />
       </NavIcon>
     </NavContainer>
   );
